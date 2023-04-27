@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Encoder;
+namespace Creativestyle\Bundle\AkeneoBundle\Encoder;
 
 use Oro\Bundle\SecurityBundle\Encoder\SymmetricCrypterInterface;
 

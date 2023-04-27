@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Integration\Connector;
+namespace Creativestyle\Bundle\AkeneoBundle\Integration\Connector;
 
-use Oro\Bundle\AkeneoBundle\Integration\AkeneoTransportInterface;
+use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoTransportInterface;
 use Oro\Bundle\EntityConfigBundle\Entity\FieldConfigModel;
 use Oro\Bundle\IntegrationBundle\Provider\AbstractConnector;
 

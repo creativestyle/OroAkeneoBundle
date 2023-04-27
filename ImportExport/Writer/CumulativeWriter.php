@@ -1,12 +1,12 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Writer;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Writer;
 
 use Doctrine\Common\Util\ClassUtils;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\UnitOfWork;
 use Doctrine\Persistence\ManagerRegistry;
-use Oro\Bundle\AkeneoBundle\EventListener\AdditionalOptionalListenerManager;
+use Creativestyle\Bundle\AkeneoBundle\EventListener\AdditionalOptionalListenerManager;
 use Oro\Bundle\BatchBundle\Entity\StepExecution;
 use Oro\Bundle\BatchBundle\Item\ItemWriterInterface;
 use Oro\Bundle\BatchBundle\Item\Support\ClosableInterface;

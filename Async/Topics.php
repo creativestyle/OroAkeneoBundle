@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Async;
+namespace Creativestyle\Bundle\AkeneoBundle\Async;
 
 use Oro\Component\MessageQueue\Topic\AbstractTopic;
 use Symfony\Component\OptionsResolver\OptionsResolver;

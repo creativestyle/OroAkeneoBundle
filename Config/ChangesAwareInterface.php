@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Config;
+namespace Creativestyle\Bundle\AkeneoBundle\Config;
 
 interface ChangesAwareInterface
 {

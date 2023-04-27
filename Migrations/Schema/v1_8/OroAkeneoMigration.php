@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Migrations\Schema\v1_8;
+namespace Creativestyle\Bundle\AkeneoBundle\Migrations\Schema\v1_8;
 
 use Doctrine\DBAL\Schema\Schema;
 use Oro\Bundle\EntityBundle\Provider\EntityFieldProvider;

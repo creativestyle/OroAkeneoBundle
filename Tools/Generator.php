@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Tools;
+namespace Creativestyle\Bundle\AkeneoBundle\Tools;
 
 /**
  * Generates code which should start with a symbol and contain only alphabetic symbols.

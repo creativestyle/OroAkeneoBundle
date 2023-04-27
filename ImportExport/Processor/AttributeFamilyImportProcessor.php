@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Processor;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Processor;
 
-use Oro\Bundle\AkeneoBundle\Tools\AttributeFamilyCodeGenerator;
+use Creativestyle\Bundle\AkeneoBundle\Tools\AttributeFamilyCodeGenerator;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareInterface;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareTrait;
 use Oro\Bundle\IntegrationBundle\ImportExport\Processor\StepExecutionAwareImportProcessor;

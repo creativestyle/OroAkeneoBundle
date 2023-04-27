@@ -1,10 +1,10 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Integration\Iterator;
+namespace Creativestyle\Bundle\AkeneoBundle\Integration\Iterator;
 
 use Akeneo\Pim\ApiClient\AkeneoPimClientInterface;
 use Akeneo\Pim\ApiClient\Pagination\ResourceCursorInterface;
-use Oro\Bundle\AkeneoBundle\Integration\AkeneoTransportInterface;
+use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoTransportInterface;
 use Psr\Log\LoggerInterface;
 
 class BrandIterator extends AbstractIterator

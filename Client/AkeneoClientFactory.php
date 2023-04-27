@@ -1,11 +1,11 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Client;
+namespace Creativestyle\Bundle\AkeneoBundle\Client;
 
 use Akeneo\Pim\ApiClient\AkeneoPimClientBuilder;
 use Akeneo\Pim\ApiClient\AkeneoPimClientInterface;
-use Oro\Bundle\AkeneoBundle\Encoder\Crypter;
-use Oro\Bundle\AkeneoBundle\Entity\AkeneoSettings;
+use Creativestyle\Bundle\AkeneoBundle\Encoder\Crypter;
+use Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings;
 use Oro\Bundle\EntityBundle\ORM\DoctrineHelper;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestFactoryInterface;

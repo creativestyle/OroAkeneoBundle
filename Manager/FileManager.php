@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Manager;
+namespace Creativestyle\Bundle\AkeneoBundle\Manager;
 
-use Oro\Bundle\AkeneoBundle\Integration\AkeneoFileManager;
+use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoFileManager;
 use Oro\Bundle\AttachmentBundle\Entity\File;
 use Oro\Bundle\AttachmentBundle\Manager\FileManager as BaseManager;
 

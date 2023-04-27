@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Form\Type;
+namespace Creativestyle\Bundle\AkeneoBundle\Form\Type;
 
-use Oro\Bundle\AkeneoBundle\Entity\AkeneoLocale;
+use Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoLocale;
 use Oro\Bundle\FormBundle\Form\Type\OroChoiceType;
 use Oro\Bundle\LocaleBundle\Manager\LocalizationManager;
 use Psr\Log\LoggerAwareInterface;

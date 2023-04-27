@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ProductVariant\VariantFieldValueHandler;
+namespace Creativestyle\Bundle\AkeneoBundle\ProductVariant\VariantFieldValueHandler;
 
 use Oro\Bundle\EntityBundle\ORM\DoctrineHelper;
 use Oro\Bundle\ProductBundle\Entity\Product;

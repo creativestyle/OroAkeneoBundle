@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\DataConverter;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\DataConverter;
 
 use Oro\Bundle\ProductBundle\Entity\ProductImageType;
 use Oro\Bundle\ProductBundle\ImportExport\DataConverter\ProductImageDataConverter as BaseProductImageDataConverter;

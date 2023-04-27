@@ -1,14 +1,14 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Form\Type;
+namespace Creativestyle\Bundle\AkeneoBundle\Form\Type;
 
-use Oro\Bundle\AkeneoBundle\Encoder\Crypter;
-use Oro\Bundle\AkeneoBundle\Entity\AkeneoSettings;
-use Oro\Bundle\AkeneoBundle\Integration\AkeneoTransportInterface;
-use Oro\Bundle\AkeneoBundle\Settings\DataProvider\SyncProductsDataProviderInterface;
-use Oro\Bundle\AkeneoBundle\Validator\Constraints\AttributeCodeConstraint;
-use Oro\Bundle\AkeneoBundle\Validator\Constraints\AttributeMappingConstraint;
-use Oro\Bundle\AkeneoBundle\Validator\Constraints\JsonConstraint;
+use Creativestyle\Bundle\AkeneoBundle\Encoder\Crypter;
+use Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings;
+use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoTransportInterface;
+use Creativestyle\Bundle\AkeneoBundle\Settings\DataProvider\SyncProductsDataProviderInterface;
+use Creativestyle\Bundle\AkeneoBundle\Validator\Constraints\AttributeCodeConstraint;
+use Creativestyle\Bundle\AkeneoBundle\Validator\Constraints\AttributeMappingConstraint;
+use Creativestyle\Bundle\AkeneoBundle\Validator\Constraints\JsonConstraint;
 use Oro\Bundle\CatalogBundle\Entity\Category;
 use Oro\Bundle\FormBundle\Form\Type\OroEncodedPlaceholderPasswordType;
 use Oro\Bundle\PricingBundle\Form\Type\PriceListSelectType;

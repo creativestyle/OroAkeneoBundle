@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\EventListener;
+namespace Creativestyle\Bundle\AkeneoBundle\EventListener;
 
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Oro\Bundle\AttachmentBundle\Entity\File;

@@ -1,13 +1,13 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Entity;
+namespace Creativestyle\Bundle\AkeneoBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Table(name="oro_akeneo_locale")
  *
- * @ORM\Entity(repositoryClass="Oro\Bundle\AkeneoBundle\Entity\Repository\AkeneoLocaleRepository")
+ * @ORM\Entity(repositoryClass="Creativestyle\Bundle\AkeneoBundle\Entity\Repository\AkeneoLocaleRepository")
  */
 class AkeneoLocale
 {
@@ -32,7 +32,7 @@ class AkeneoLocale
      */
     private $code;
     /**
-     * @ORM\ManyToOne(targetEntity="Oro\Bundle\AkeneoBundle\Entity\AkeneoSettings", inversedBy="akeneoLocales")
+     * @ORM\ManyToOne(targetEntity="Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings", inversedBy="akeneoLocales")
      * @ORM\JoinColumn(referencedColumnName="id")
      */
     private $akeneoSettings;

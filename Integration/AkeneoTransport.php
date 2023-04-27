@@ -1,18 +1,18 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Integration;
+namespace Creativestyle\Bundle\AkeneoBundle\Integration;
 
 use Akeneo\Pim\ApiClient\AkeneoPimClientInterface;
 use Akeneo\Pim\ApiClient\Exception\NotFoundHttpException;
-use Oro\Bundle\AkeneoBundle\Client\AkeneoClientFactory;
-use Oro\Bundle\AkeneoBundle\Entity\AkeneoSettings;
-use Oro\Bundle\AkeneoBundle\Form\Type\AkeneoSettingsType;
-use Oro\Bundle\AkeneoBundle\Integration\Iterator\AttributeFamilyIterator;
-use Oro\Bundle\AkeneoBundle\Integration\Iterator\AttributeIterator;
-use Oro\Bundle\AkeneoBundle\Integration\Iterator\BrandIterator;
-use Oro\Bundle\AkeneoBundle\Integration\Iterator\ConfigurableProductIterator;
-use Oro\Bundle\AkeneoBundle\Integration\Iterator\ProductIterator;
-use Oro\Bundle\AkeneoBundle\Settings\DataProvider\SyncProductsDataProvider;
+use Creativestyle\Bundle\AkeneoBundle\Client\AkeneoClientFactory;
+use Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings;
+use Creativestyle\Bundle\AkeneoBundle\Form\Type\AkeneoSettingsType;
+use Creativestyle\Bundle\AkeneoBundle\Integration\Iterator\AttributeFamilyIterator;
+use Creativestyle\Bundle\AkeneoBundle\Integration\Iterator\AttributeIterator;
+use Creativestyle\Bundle\AkeneoBundle\Integration\Iterator\BrandIterator;
+use Creativestyle\Bundle\AkeneoBundle\Integration\Iterator\ConfigurableProductIterator;
+use Creativestyle\Bundle\AkeneoBundle\Integration\Iterator\ProductIterator;
+use Creativestyle\Bundle\AkeneoBundle\Settings\DataProvider\SyncProductsDataProvider;
 use Oro\Bundle\CurrencyBundle\Provider\CurrencyProviderInterface;
 use Oro\Bundle\GaufretteBundle\FileManager;
 use Oro\Bundle\IntegrationBundle\Entity\Transport;

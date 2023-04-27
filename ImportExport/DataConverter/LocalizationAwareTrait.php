@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\DataConverter;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\DataConverter;
 
 use Oro\Bundle\ConfigBundle\Config\ConfigManager;
 use Oro\Bundle\EntityBundle\ORM\DoctrineHelper;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Reader;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Reader;
 
-use Oro\Bundle\AkeneoBundle\ImportExport\AkeneoIntegrationTrait;
-use Oro\Bundle\AkeneoBundle\Integration\AkeneoFileManager;
+use Creativestyle\Bundle\AkeneoBundle\ImportExport\AkeneoIntegrationTrait;
+use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoFileManager;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareInterface;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareTrait;
 use Oro\Bundle\EntityBundle\ORM\DoctrineHelper;

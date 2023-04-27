@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Serializer\Normalizer;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Serializer\Normalizer;
 
 use Oro\Bundle\EntityConfigBundle\Attribute\Entity\AttributeGroup;
 use Oro\Bundle\EntityConfigBundle\Attribute\Entity\AttributeGroupRelation;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ProductUnit;
+namespace Creativestyle\Bundle\AkeneoBundle\ProductUnit;
 
-use Oro\Bundle\AkeneoBundle\Entity\AkeneoSettings;
-use Oro\Bundle\AkeneoBundle\Exceptions\IgnoreProductUnitChangesException;
+use Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings;
+use Creativestyle\Bundle\AkeneoBundle\Exceptions\IgnoreProductUnitChangesException;
 
 interface ProductUnitDiscoveryInterface
 {

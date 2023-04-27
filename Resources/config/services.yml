@@ -1,14 +1,14 @@
 services:
   oro_akeneo.settings.sync_products.provider:
-    class: Oro\Bundle\AkeneoBundle\Settings\DataProvider\SyncProductsDataProvider
+    class: Creativestyle\Bundle\AkeneoBundle\Settings\DataProvider\SyncProductsDataProvider
 
   oro_akeneo.encoder.crypter:
-    class: Oro\Bundle\AkeneoBundle\Encoder\Crypter
+    class: Creativestyle\Bundle\AkeneoBundle\Encoder\Crypter
     arguments:
       - "@oro_security.encoder.default"
 
   oro_akeneo.connection.client_factory:
-    class: Oro\Bundle\AkeneoBundle\Client\AkeneoClientFactory
+    class: Creativestyle\Bundle\AkeneoBundle\Client\AkeneoClientFactory
     arguments:
       - "@oro_entity.doctrine_helper"
       - "@oro_akeneo.encoder.crypter"
@@ -17,29 +17,29 @@ services:
       - "@psr18.http_client"
 
   oro_akeneo.event_subscriber.field_config:
-    class: Oro\Bundle\AkeneoBundle\EventSubscriber\FieldConfigSubscriber
+    class: Creativestyle\Bundle\AkeneoBundle\EventSubscriber\FieldConfigSubscriber
     tags:
       - { name: kernel.event_subscriber }
 
   oro_akeneo.placeholder.schema_update_filter:
-    class: Oro\Bundle\AkeneoBundle\Placeholder\SchemaUpdateFilter
+    class: Creativestyle\Bundle\AkeneoBundle\Placeholder\SchemaUpdateFilter
     public: true
     arguments:
       - "@oro_entity_config.config_manager"
       - "@oro_entity_config.helper.entity_config_provider_helper"
 
   oro_akeneo.form.extension.channel_type:
-    class: Oro\Bundle\AkeneoBundle\Form\Extension\ChannelTypeExtension
+    class: Creativestyle\Bundle\AkeneoBundle\Form\Extension\ChannelTypeExtension
     tags:
       - { name: form.type_extension, extended_type: Oro\Bundle\IntegrationBundle\Form\Type\ChannelType }
 
   oro_akeneo.form.extension.attachment_acl_extension:
-    class: 'Oro\Bundle\AkeneoBundle\Form\Extension\AttachmentAclExtension'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Form\Extension\AttachmentAclExtension'
     tags:
       - { name: form.type_extension, alias: oro_entity_config_type, extended_type: Oro\Bundle\EntityConfigBundle\Form\Type\ConfigType }
 
   oro_akeneo.form.extension.product_type:
-    class: Oro\Bundle\AkeneoBundle\Form\Extension\ProductTypeExtension
+    class: Creativestyle\Bundle\AkeneoBundle\Form\Extension\ProductTypeExtension
     arguments:
       - "@oro_entity_config.config_manager"
       - "@oro_entity.helper.field_helper"
@@ -47,29 +47,29 @@ services:
       - { name: form.type_extension, extended_type: Oro\Bundle\ProductBundle\Form\Type\ProductType }
 
   oro_akeneo.enum_synchronizer:
-    class: Oro\Bundle\AkeneoBundle\Tools\EnumSynchronizer
+    class: Creativestyle\Bundle\AkeneoBundle\Tools\EnumSynchronizer
     parent: oro_entity_extend.enum_synchronizer
 
   oro_akeneo.integration.search_builder:
-    class: Oro\Bundle\AkeneoBundle\Integration\AkeneoSearchBuilder
+    class: Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoSearchBuilder
 
   oro_akeneo.validator.json_validator:
-    class: Oro\Bundle\AkeneoBundle\Validator\JsonValidator
+    class: Creativestyle\Bundle\AkeneoBundle\Validator\JsonValidator
     tags:
       - { name: validator.constraint_validator, alias: oro_akeneo.json_validator }
 
   oro_akeneo.validator.attribute_code_validator:
-    class: Oro\Bundle\AkeneoBundle\Validator\AttributeCodeValidator
+    class: Creativestyle\Bundle\AkeneoBundle\Validator\AttributeCodeValidator
     tags:
       - { name: validator.constraint_validator, alias: oro_akeneo.attribute_code_validator }
 
   oro_akeneo.validator.attribute_mapping_validator:
-    class: Oro\Bundle\AkeneoBundle\Validator\AttributeMappingValidator
+    class: Creativestyle\Bundle\AkeneoBundle\Validator\AttributeMappingValidator
     tags:
       - { name: validator.constraint_validator, alias: oro_akeneo.attribute_mapping_validator }
 
   oro_akeneo.validator.unique_variant_links:
-    class: 'Oro\Bundle\AkeneoBundle\Validator\UniqueProductVariantLinksValidator'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Validator\UniqueProductVariantLinksValidator'
     decorates: oro_product.validator.unique_variant_links
     arguments:
       - '@oro_entity.doctrine_helper'
@@ -78,7 +78,7 @@ services:
       - { name: validator.constraint_validator, alias: oro_product_unique_variant_links }
 
   oro_akeneo.validator.unique_variant_links_simple_product:
-    class: 'Oro\Bundle\AkeneoBundle\Validator\UniqueVariantLinksSimpleProductValidator'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Validator\UniqueVariantLinksSimpleProductValidator'
     decorates: oro_product.validator.unique_variant_links_simple_product
     arguments:
       - '@oro_entity.doctrine_helper'
@@ -87,14 +87,14 @@ services:
       - { name: validator.constraint_validator, alias: oro_product_unique_variant_links_simple_product }
 
   oro_akeneo.event_subscriber.doctrine:
-    class: 'Oro\Bundle\AkeneoBundle\EventSubscriber\DoctrineSubscriber'
+    class: 'Creativestyle\Bundle\AkeneoBundle\EventSubscriber\DoctrineSubscriber'
     calls:
       - [setContainer, ['@service_container']]
     tags:
       - { name: doctrine.event_subscriber }
 
   oro_akeneo.async.sync_integration_processor:
-    class: 'Oro\Bundle\AkeneoBundle\Async\SyncIntegrationProcessor'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Async\SyncIntegrationProcessor'
     decorates: oro_integration.async.sync_integration_processor
     arguments:
       - '@doctrine'
@@ -105,7 +105,7 @@ services:
       - [setLogger, ["@logger"]]
 
   oro_akeneo.async.import_product_processor:
-    class: 'Oro\Bundle\AkeneoBundle\Async\ImportProductProcessor'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Async\ImportProductProcessor'
     arguments:
       - '@oro_entity.doctrine_helper'
       - '@oro_message_queue.job.runner'
@@ -115,19 +115,19 @@ services:
     calls:
       - [ setMemoryCacheProvider, [ '@oro_akeneo.importexport.cache' ] ]
     tags:
-      - { name: 'oro_message_queue.client.message_processor', topicName: !php/const Oro\Bundle\AkeneoBundle\Async\Topics::IMPORT_PRODUCTS }
+      - { name: 'oro_message_queue.client.message_processor', topicName: !php/const Creativestyle\Bundle\AkeneoBundle\Async\Topics::IMPORT_PRODUCTS }
 
-  Oro\Bundle\AkeneoBundle\Async\Topics:
+  Creativestyle\Bundle\AkeneoBundle\Async\Topics:
       tags:
           - { name: oro_message_queue.topic }
 
   oro_akeneo.config_manager:
-    class: 'Oro\Bundle\AkeneoBundle\Config\ConfigManager'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Config\ConfigManager'
     decorates: oro_entity_config.config_manager
     parent: oro_entity_config.config_manager
 
   oro_akeneo.event_listener.doctrine_tag.decorator:
-    class: Oro\Bundle\AkeneoBundle\EventListener\DoctrineTagEventListenerDecorator
+    class: Creativestyle\Bundle\AkeneoBundle\EventListener\DoctrineTagEventListenerDecorator
     decorates: oro_sync.event_listener.doctrine_tag
     decoration_priority: -255
     public: true
@@ -135,7 +135,7 @@ services:
       - '@oro_akeneo.event_listener.doctrine_tag.decorator.inner'
 
   oro_akeneo.event_listener.import_export_tags_subscriber.decorator:
-    class: Oro\Bundle\AkeneoBundle\EventListener\ImportExportTagsSubscriberDecorator
+    class: Creativestyle\Bundle\AkeneoBundle\EventListener\ImportExportTagsSubscriberDecorator
     decorates: oro_tag.event_listener.import_export_tags_subscriber
     decoration_priority: -255
     public: true
@@ -144,12 +144,12 @@ services:
       - '@oro_tag.tag_import.manager'
 
   oro_akeneo.event_listener.load_class_metadata:
-    class: Oro\Bundle\AkeneoBundle\EventListener\LoadClassMetadataListener
+    class: Creativestyle\Bundle\AkeneoBundle\EventListener\LoadClassMetadataListener
     tags:
       - { name: doctrine.event_listener, event: loadClassMetadata }
 
   oro_akeneo.event_listener.product_collection_variant_reindex_message_send_listener.decorator:
-    class: Oro\Bundle\AkeneoBundle\EventListener\ProductCollectionVariantReindexMessageSendListenerDecorator
+    class: Creativestyle\Bundle\AkeneoBundle\EventListener\ProductCollectionVariantReindexMessageSendListenerDecorator
     decorates: oro_product.entity.event_listener.product_collection_variant_reindex_message_send_listener
     decoration_priority: -255
     public: true
@@ -157,29 +157,29 @@ services:
       - '@oro_akeneo.event_listener.product_collection_variant_reindex_message_send_listener.decorator.inner'
 
   oro_akeneo.event_listener.reindex_parent_configurable_product.decorator:
-    class: Oro\Bundle\AkeneoBundle\EventListener\ReindexParentConfigurableProductListenerDecorator
+    class: Creativestyle\Bundle\AkeneoBundle\EventListener\ReindexParentConfigurableProductListenerDecorator
     decorates: oro_product.event_listener.reindex_parent_configurable_product
     decoration_priority: -255
     arguments:
       - '@oro_akeneo.event_listener.reindex_parent_configurable_product.decorator.inner'
 
   oro_akeneo.event_listener.additional_optional_listeners_manager:
-    class: Oro\Bundle\AkeneoBundle\EventListener\AdditionalOptionalListenerManager
+    class: Creativestyle\Bundle\AkeneoBundle\EventListener\AdditionalOptionalListenerManager
 
   oro_akeneo.job.context.aggregator.simple:
-    class: 'Oro\Bundle\AkeneoBundle\Job\Context\SimpleContextAggregator'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Job\Context\SimpleContextAggregator'
     parent: oro_importexport.job.context.aggregator.simple
     decorates: oro_importexport.job.context.aggregator.simple
 
   oro_akeneo.layout.data_provider.file_applications:
-    class: 'Oro\Bundle\AkeneoBundle\Layout\DataProvider\FileApplicationsDataProvider'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Layout\DataProvider\FileApplicationsDataProvider'
     decorates: oro_attachment.layout.data_provider.file_applications
     arguments:
       - '@oro_akeneo.layout.data_provider.file_applications.inner'
       - '@oro_entity_config.provider.attribute'
 
   oro_akeneo.layout.block_type.attribute_group:
-    class: 'Oro\Bundle\AkeneoBundle\Layout\Block\Type\AttributeGroupType'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Layout\Block\Type\AttributeGroupType'
     decorates: oro_entity_config.block_type.attribute_group
     decoration_priority: -255
     arguments:
@@ -191,7 +191,7 @@ services:
       - { name: layout.block_type, alias: attribute_group }
 
   oro_akeneo.product_variant.type_handler.string_type_handle:
-    class: 'Oro\Bundle\AkeneoBundle\ProductVariant\TypeHandler\StringTypeHandler'
+    class: 'Creativestyle\Bundle\AkeneoBundle\ProductVariant\TypeHandler\StringTypeHandler'
     arguments:
       - '@form.factory'
 
@@ -202,7 +202,7 @@ services:
       - [addHandler, ['@oro_akeneo.product_variant.type_handler.string_type_handle']]
 
   oro_akeneo.product_variant_field.field_value_handler.string_type_handler:
-    class: 'Oro\Bundle\AkeneoBundle\ProductVariant\VariantFieldValueHandler\StringVariantFieldValueHandler'
+    class: 'Creativestyle\Bundle\AkeneoBundle\ProductVariant\VariantFieldValueHandler\StringVariantFieldValueHandler'
     arguments:
       - '@oro_entity.doctrine_helper'
 
@@ -213,7 +213,7 @@ services:
       - [addHandler, ['@oro_akeneo.product_variant_field.field_value_handler.string_type_handler']]
 
   oro_akeneo.provider.serialized_field_provider:
-    class: 'Oro\Bundle\AkeneoBundle\Provider\SerializedFieldProvider'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Provider\SerializedFieldProvider'
     decorates: oro_entity_config.provider.serialized_field_provider
     decoration_priority: -255
     arguments:
@@ -221,7 +221,7 @@ services:
       - '@oro_entity_config.provider.importexport'
 
   oro_akeneo.provider.variant_field_provider:
-    class: 'Oro\Bundle\AkeneoBundle\Provider\VariantFieldProvider'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Provider\VariantFieldProvider'
     decorates: oro_product.provider.variant_field_provider
     arguments:
       - '@oro_akeneo.provider.variant_field_provider.inner'
@@ -229,12 +229,12 @@ services:
       - '@oro_entity_config.provider.serialized_field_provider'
 
   oro_akeneo.integration.akeneo_file_manager:
-    class: 'Oro\Bundle\AkeneoBundle\Integration\AkeneoFileManager'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoFileManager'
     arguments:
       - '@oro_integration.provider.connector_context_mediator'
 
   oro_akeneo.file_manager:
-    class: 'Oro\Bundle\AkeneoBundle\Manager\FileManager'
+    class: 'Creativestyle\Bundle\AkeneoBundle\Manager\FileManager'
     parent: oro_attachment.file_manager
     decorates: oro_attachment.file_manager
     decoration_priority: -255
@@ -242,7 +242,7 @@ services:
       - [setAkeneoFileManager, ["@oro_akeneo.integration.akeneo_file_manager"]]
 
   oro_akeneo.event_listener.refresh_context_listener:
-    class: 'Oro\Bundle\AkeneoBundle\EventListener\RefreshContextListener'
+    class: 'Creativestyle\Bundle\AkeneoBundle\EventListener\RefreshContextListener'
     parent: oro_security.listener.refresh_context_listener
     decorates: oro_security.listener.refresh_context_listener
     tags:
@@ -373,7 +373,7 @@ services:
                 groups: ['import_field_type_akeneo']
 
   oro_akeneo.event_listener.attributes_datagrid:
-    class: 'Oro\Bundle\AkeneoBundle\EventListener\AttributesDatagridListener'
+    class: 'Creativestyle\Bundle\AkeneoBundle\EventListener\AttributesDatagridListener'
     decorates: oro_entity_config.event_listener.attributes_datagrid
     arguments:
       - '@oro_entity.doctrine_helper'
@@ -382,17 +382,17 @@ services:
       - { name: kernel.event_listener, event: oro_datagrid.orm_datasource.result.after.attributes-grid, method: onResultAfter }
 
   oro_akeneo.event_listener.deleted_attribute_relation:
-    class: 'Oro\Bundle\AkeneoBundle\EventListener\DeletedAttributeRelationListener'
+    class: 'Creativestyle\Bundle\AkeneoBundle\EventListener\DeletedAttributeRelationListener'
     decorates: oro_entity_config.event_listener.deleted_attribute_relation
     parent: oro_entity_config.event_listener.deleted_attribute_relation
 
   oro_akeneo.event_listener.deleted_attribute_relation_serialized:
-    class: 'Oro\Bundle\AkeneoBundle\EventListener\DeletedAttributeRelationListener'
+    class: 'Creativestyle\Bundle\AkeneoBundle\EventListener\DeletedAttributeRelationListener'
     decorates: oro_serialized_fields.event_listener.deleted_attribute_relation_serialized
     parent: oro_serialized_fields.event_listener.deleted_attribute_relation_serialized
 
   oro_akeneo.entity_config.importexport_field_configuration:
-    class: Oro\Bundle\AkeneoBundle\EntityConfig\ImportexportFieldConfiguration
+    class: Creativestyle\Bundle\AkeneoBundle\EntityConfig\ImportexportFieldConfiguration
     tags:
       - oro_entity_config.validation.entity_config
 
@@ -402,7 +402,7 @@ services:
       - { name: 'cache.pool', namespace: 'oro_akeneo_configurable_cache' }
 
   oro_akeneo.product_unit.discovery:
-    class: Oro\Bundle\AkeneoBundle\ProductUnit\ImportFromAkeneoDiscovery
+    class: Creativestyle\Bundle\AkeneoBundle\ProductUnit\ImportFromAkeneoDiscovery
     arguments:
       - '@oro_config.manager'
       - '@oro_product.provider.product_units_provider'

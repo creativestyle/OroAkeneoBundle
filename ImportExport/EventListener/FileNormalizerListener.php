@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\EventListener;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\EventListener;
 
 use Oro\Bundle\AttachmentBundle\Entity\File;
 use Oro\Bundle\ImportExportBundle\Event\DenormalizeEntityEvent;

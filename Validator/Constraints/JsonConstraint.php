@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Validator\Constraints;
+namespace Creativestyle\Bundle\AkeneoBundle\Validator\Constraints;
 
 use Symfony\Component\Validator\Constraint;
 

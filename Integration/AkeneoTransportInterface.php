@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Integration;
+namespace Creativestyle\Bundle\AkeneoBundle\Integration;
 
 use Oro\Bundle\CurrencyBundle\Provider\CurrencyProviderInterface;
 use Oro\Bundle\IntegrationBundle\Provider\TransportInterface;

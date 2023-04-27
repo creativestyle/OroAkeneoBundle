@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Placeholder;
+namespace Creativestyle\Bundle\AkeneoBundle\Placeholder;
 
-use Oro\Bundle\AkeneoBundle\Integration\AkeneoChannel;
+use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoChannel;
 use Oro\Bundle\EntityConfigBundle\Config\ConfigManager;
 use Oro\Bundle\EntityConfigBundle\Helper\EntityConfigProviderHelper;
 use Oro\Bundle\IntegrationBundle\Entity\Channel;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\DependencyInjection\CompilerPass;
+namespace Creativestyle\Bundle\AkeneoBundle\DependencyInjection\CompilerPass;
 
-use Oro\Bundle\AkeneoBundle\EventListener\AdditionalOptionalListenerInterface;
+use Creativestyle\Bundle\AkeneoBundle\EventListener\AdditionalOptionalListenerInterface;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ProductUnit;
+namespace Creativestyle\Bundle\AkeneoBundle\ProductUnit;
 
-use Oro\Bundle\AkeneoBundle\Entity\AkeneoSettings;
+use Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings;
 use Oro\Bundle\ConfigBundle\Config\ConfigManager;
 use Oro\Bundle\ProductBundle\Provider\ProductUnitsProvider;
 

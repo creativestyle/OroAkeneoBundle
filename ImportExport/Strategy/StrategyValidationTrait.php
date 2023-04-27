@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Strategy;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Strategy;
 
 use Doctrine\ORM\ORMInvalidArgumentException;
 

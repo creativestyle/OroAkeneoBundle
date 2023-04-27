@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Processor;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Processor;
 
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareInterface;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareTrait;

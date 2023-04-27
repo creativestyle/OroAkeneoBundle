@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Integration\Iterator;
+namespace Creativestyle\Bundle\AkeneoBundle\Integration\Iterator;
 
 class AttributeFamilyIterator extends AbstractIterator
 {

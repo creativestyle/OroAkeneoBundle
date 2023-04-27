@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Entity;
+namespace Creativestyle\Bundle\AkeneoBundle\Entity;
 
 use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -12,7 +12,7 @@ use Oro\Bundle\PricingBundle\Entity\PriceList;
 use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
- * @ORM\Entity(repositoryClass="Oro\Bundle\AkeneoBundle\Entity\Repository\AkeneoSettingsRepository")
+ * @ORM\Entity(repositoryClass="Creativestyle\Bundle\AkeneoBundle\Entity\Repository\AkeneoSettingsRepository")
  *
  * @SuppressWarnings(PHPMD.TooManyFields)
  */
@@ -147,7 +147,7 @@ class AkeneoSettings extends Transport
 
     /**
      * @ORM\OneToMany(
-     *     targetEntity="Oro\Bundle\AkeneoBundle\Entity\AkeneoLocale",
+     *     targetEntity="Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoLocale",
      *     mappedBy="akeneoSettings",
      *     cascade={"persist"},
      *     orphanRemoval=true,

@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Serializer\Normalizer;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Serializer\Normalizer;
 
-use Oro\Bundle\AkeneoBundle\Integration\AkeneoChannel;
+use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoChannel;
 use Oro\Bundle\AttachmentBundle\Entity\FileItem;
 use Symfony\Component\Serializer\Normalizer\ContextAwareDenormalizerInterface;
 

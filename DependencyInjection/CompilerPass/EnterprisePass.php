@@ -1,10 +1,10 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\DependencyInjection\CompilerPass;
+namespace Creativestyle\Bundle\AkeneoBundle\DependencyInjection\CompilerPass;
 
 use Doctrine\Inflector\Inflector;
-use Oro\Bundle\AkeneoBundle\EventListener\AttributesGridListener;
-use Oro\Bundle\AkeneoBundle\Tools\AttributeEntityGeneratorExtension;
+use Creativestyle\Bundle\AkeneoBundle\EventListener\AttributesGridListener;
+use Creativestyle\Bundle\AkeneoBundle\Tools\AttributeEntityGeneratorExtension;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;

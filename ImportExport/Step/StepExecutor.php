@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Step;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Step;
 
 use Oro\Bundle\BatchBundle\Exception\InvalidItemException;
 use Oro\Bundle\BatchBundle\Step\StepExecutionWarningHandlerInterface;

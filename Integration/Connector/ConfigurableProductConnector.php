@@ -1,9 +1,9 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Integration\Connector;
+namespace Creativestyle\Bundle\AkeneoBundle\Integration\Connector;
 
-use Oro\Bundle\AkeneoBundle\Integration\AkeneoTransport;
-use Oro\Bundle\AkeneoBundle\Placeholder\SchemaUpdateFilter;
+use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoTransport;
+use Creativestyle\Bundle\AkeneoBundle\Placeholder\SchemaUpdateFilter;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareInterface;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareTrait;
 use Oro\Bundle\IntegrationBundle\Entity\Channel;

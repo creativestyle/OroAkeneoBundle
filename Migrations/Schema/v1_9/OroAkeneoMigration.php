@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Migrations\Schema\v1_9;
+namespace Creativestyle\Bundle\AkeneoBundle\Migrations\Schema\v1_9;
 
 use Doctrine\DBAL\Schema\Schema;
 use Oro\Bundle\CatalogBundle\Entity\Category;

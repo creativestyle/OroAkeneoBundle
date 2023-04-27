@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\EventListener;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\EventListener;
 
 use Oro\Bundle\BatchBundle\Item\Support\ClosableInterface;
 use Oro\Bundle\ImportExportBundle\Event\StrategyEvent;

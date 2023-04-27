@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Strategy;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Strategy;
 
-use Oro\Bundle\AkeneoBundle\ImportExport\AkeneoIntegrationTrait;
+use Creativestyle\Bundle\AkeneoBundle\ImportExport\AkeneoIntegrationTrait;
 use Oro\Bundle\PricingBundle\ImportExport\Strategy\ProductPriceImportStrategy as BaseStrategy;
 
 /**

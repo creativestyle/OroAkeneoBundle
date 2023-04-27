@@ -1,5 +1,5 @@
 {
-    "name": "oro/commerce-akeneo",
+    "name": "creativestyle/commerce-akeneo",
     "description": "Akeneo PIM OroCommerce Connector.",
     "homepage": "https://github.com/oroinc/OroAkeneoBundle",
     "license": "OSL-3.0",
@@ -7,11 +7,15 @@
         {
             "name": "Oro, Inc",
             "homepage": "https://www.orocommerce.com/"
+        },
+        {
+            "name": "Creativestyle GmbH",
+            "homepage": "https://creativestyle.de"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Oro\\Bundle\\AkeneoBundle\\": ""
+            "Creativestyle\\Bundle\\AkeneoBundle\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"

@@ -1,4 +1,4 @@
-Oro\Bundle\AkeneoBundle\Entity\AkeneoSettings:
+Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings:
   properties:
     url:
       - NotBlank: ~

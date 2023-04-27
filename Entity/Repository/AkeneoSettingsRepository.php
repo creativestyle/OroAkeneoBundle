@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Entity\Repository;
+namespace Creativestyle\Bundle\AkeneoBundle\Entity\Repository;
 
 use Doctrine\ORM\EntityRepository;
 

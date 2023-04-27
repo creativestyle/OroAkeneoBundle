@@ -1,9 +1,9 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Writer;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Writer;
 
-use Oro\Bundle\AkeneoBundle\Config\ChangesAwareInterface;
-use Oro\Bundle\AkeneoBundle\Tools\EnumSynchronizer;
+use Creativestyle\Bundle\AkeneoBundle\Config\ChangesAwareInterface;
+use Creativestyle\Bundle\AkeneoBundle\Tools\EnumSynchronizer;
 use Oro\Bundle\BatchBundle\Entity\StepExecution;
 use Oro\Bundle\BatchBundle\Item\Support\ClosableInterface;
 use Oro\Bundle\BatchBundle\Step\StepExecutionAwareInterface;

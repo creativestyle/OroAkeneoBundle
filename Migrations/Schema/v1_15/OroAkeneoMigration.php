@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Migrations\Schema\v1_15;
+namespace Creativestyle\Bundle\AkeneoBundle\Migrations\Schema\v1_15;
 
 use Doctrine\DBAL\Schema\Schema;
 use Oro\Bundle\EntityConfigBundle\Migration\UpdateEntityConfigFieldValueQuery;

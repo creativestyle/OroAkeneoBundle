@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Validator;
+namespace Creativestyle\Bundle\AkeneoBundle\Validator;
 
-use Oro\Bundle\AkeneoBundle\Validator\Constraints\JsonConstraint;
+use Creativestyle\Bundle\AkeneoBundle\Validator\Constraints\JsonConstraint;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 

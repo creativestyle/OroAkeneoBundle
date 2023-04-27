@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\EventListener;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\EventListener;
 
-use Oro\Bundle\AkeneoBundle\ImportExport\Strategy\DefaultOwnerHelper;
+use Creativestyle\Bundle\AkeneoBundle\ImportExport\Strategy\DefaultOwnerHelper;
 use Oro\Bundle\EntityBundle\ORM\DoctrineHelper;
 use Oro\Bundle\ImportExportBundle\Context\ContextInterface;
 use Oro\Bundle\ImportExportBundle\Event\StrategyEvent;

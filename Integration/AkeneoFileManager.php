@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Integration;
+namespace Creativestyle\Bundle\AkeneoBundle\Integration;
 
 use Oro\Bundle\AttachmentBundle\Entity\File;
 use Oro\Bundle\ImportExportBundle\Context\ContextInterface;

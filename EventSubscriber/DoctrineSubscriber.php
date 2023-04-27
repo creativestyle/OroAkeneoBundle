@@ -1,10 +1,10 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\EventSubscriber;
+namespace Creativestyle\Bundle\AkeneoBundle\EventSubscriber;
 
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\Events;
-use Oro\Bundle\AkeneoBundle\ImportExport\Processor\ProductImportProcessor;
+use Creativestyle\Bundle\AkeneoBundle\ImportExport\Processor\ProductImportProcessor;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 

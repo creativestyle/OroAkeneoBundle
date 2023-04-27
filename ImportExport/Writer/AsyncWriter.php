@@ -1,11 +1,11 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Writer;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Writer;
 
 use Doctrine\DBAL\Platforms\MySqlPlatform;
 use Doctrine\DBAL\Types\Types;
-use Oro\Bundle\AkeneoBundle\Async\Topics;
-use Oro\Bundle\AkeneoBundle\EventListener\AdditionalOptionalListenerManager;
+use Creativestyle\Bundle\AkeneoBundle\Async\Topics;
+use Creativestyle\Bundle\AkeneoBundle\EventListener\AdditionalOptionalListenerManager;
 use Oro\Bundle\BatchBundle\Entity\StepExecution;
 use Oro\Bundle\BatchBundle\Item\ItemWriterInterface;
 use Oro\Bundle\BatchBundle\Step\StepExecutionAwareInterface;

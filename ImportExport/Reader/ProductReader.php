@@ -1,8 +1,8 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Reader;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Reader;
 
-use Oro\Bundle\AkeneoBundle\Integration\AkeneoFileManager;
+use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoFileManager;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareInterface;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareTrait;
 use Oro\Bundle\ImportExportBundle\Context\ContextInterface;

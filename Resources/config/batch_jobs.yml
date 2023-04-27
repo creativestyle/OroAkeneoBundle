@@ -7,21 +7,21 @@ connector:
       steps:
         import:
           title: import
-          class: Oro\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
+          class: Creativestyle\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
           services:
             reader: oro_akeneo.integration.connector.category
             processor: oro_akeneo.importexport.processor.category
             writer: oro_akeneo.importexport.writer.cumulative.persistent_batch_writer
         remove:
           title: import
-          class: Oro\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
+          class: Creativestyle\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
           services:
             reader: oro_akeneo.importexport.reader.category
             processor: oro_akeneo.importexport.processor.category_remove
             writer: oro_akeneo.importexport.writer.cumulative.persistent_batch_writer
         parent:
           title: import
-          class: Oro\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
+          class: Creativestyle\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
           services:
             reader: oro_akeneo.importexport.reader.category_parent
             processor: oro_akeneo.importexport.processor.category_parent
@@ -33,14 +33,14 @@ connector:
       steps:
         import:
           title: import
-          class: Oro\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
+          class: Creativestyle\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
           services:
             reader: oro_akeneo.integration.connector.attribute_family
             processor: oro_akeneo.importexport.processor.attribute_family
             writer: oro_akeneo.importexport.writer.cumulative.persistent_batch_writer
         status:
           title: import
-          class: Oro\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
+          class: Creativestyle\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
           services:
             reader: oro_akeneo.importexport.reader.attribute_family
             processor: oro_akeneo.importexport.processor.attribute_family_status
@@ -52,7 +52,7 @@ connector:
       steps:
         import:
           title: import
-          class: Oro\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
+          class: Creativestyle\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
           services:
             reader: oro_akeneo.integration.connector.attribute
             processor: oro_akeneo.importexport.processor.attribute
@@ -73,14 +73,14 @@ connector:
             batch_size: 100
         import:
           title: import
-          class: Oro\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
+          class: Creativestyle\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
           services:
             reader: oro_akeneo.importexport.reader.product
             processor: oro_akeneo.importexport.processor.product
             writer: oro_akeneo.importexport.writer.cumulative.persistent_batch_writer
         import_images:
           title: import
-          class: Oro\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
+          class: Creativestyle\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
           services:
             reader: oro_akeneo.importexport.reader.product_image
             processor: oro_akeneo.importexport.processor.product_image
@@ -108,7 +108,7 @@ connector:
             batch_size: 100
         import_variants:
           title: import
-          class: Oro\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
+          class: Creativestyle\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
           services:
             reader: oro_akeneo.importexport.reader.product_variant
             processor: oro_akeneo.importexport.processor.import.product_variant
@@ -122,7 +122,7 @@ connector:
       steps:
         import:
           title: import
-          class: Oro\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
+          class: Creativestyle\Bundle\AkeneoBundle\ImportExport\Step\ItemStep
           services:
             reader: oro_akeneo.integration.connector.brand
             processor: oro_akeneo.importexport.processor.brand

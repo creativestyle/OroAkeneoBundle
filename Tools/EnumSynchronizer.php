@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Tools;
+namespace Creativestyle\Bundle\AkeneoBundle\Tools;
 
 use Doctrine\ORM\EntityManager;
 use Oro\Bundle\EntityExtendBundle\Entity\AbstractEnumValue;

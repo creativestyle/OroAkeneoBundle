@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Processor;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Processor;
 
 use Doctrine\Persistence\ManagerRegistry;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareInterface;

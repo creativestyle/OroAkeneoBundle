@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Migrations\Schema\v1_14;
+namespace Creativestyle\Bundle\AkeneoBundle\Migrations\Schema\v1_14;
 
 use Doctrine\DBAL\Platforms\MySqlPlatform;
 use Doctrine\DBAL\Platforms\PostgreSqlPlatform;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Async;
+namespace Creativestyle\Bundle\AkeneoBundle\Async;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareInterface;

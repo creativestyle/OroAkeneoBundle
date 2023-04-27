@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Layout\DataProvider;
+namespace Creativestyle\Bundle\AkeneoBundle\Layout\DataProvider;
 
 use Oro\Bundle\AttachmentBundle\Layout\DataProvider\FileApplicationsDataProvider as BaseFileApplicationsDataProvider;
 use Oro\Bundle\EntityConfigBundle\Provider\ConfigProvider;

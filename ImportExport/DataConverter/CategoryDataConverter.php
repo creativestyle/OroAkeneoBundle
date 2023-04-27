@@ -1,9 +1,9 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\DataConverter;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\DataConverter;
 
-use Oro\Bundle\AkeneoBundle\ImportExport\AkeneoIntegrationTrait;
-use Oro\Bundle\AkeneoBundle\Tools\Generator;
+use Creativestyle\Bundle\AkeneoBundle\ImportExport\AkeneoIntegrationTrait;
+use Creativestyle\Bundle\AkeneoBundle\Tools\Generator;
 use Oro\Bundle\EntityBundle\ORM\DoctrineHelper;
 use Oro\Bundle\ImportExportBundle\Context\ContextAwareInterface;
 use Oro\Bundle\ImportExportBundle\Context\ContextInterface;

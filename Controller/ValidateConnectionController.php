@@ -1,10 +1,10 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Controller;
+namespace Creativestyle\Bundle\AkeneoBundle\Controller;
 
 use Akeneo\Pim\ApiClient\Exception\ExceptionInterface;
-use Oro\Bundle\AkeneoBundle\Entity\AkeneoSettings;
-use Oro\Bundle\AkeneoBundle\Integration\AkeneoTransportInterface;
+use Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings;
+use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoTransportInterface;
 use Oro\Bundle\CurrencyBundle\Provider\CurrencyProviderInterface;
 use Oro\Bundle\IntegrationBundle\Entity\Channel;
 use Oro\Bundle\IntegrationBundle\Form\Type\ChannelType;

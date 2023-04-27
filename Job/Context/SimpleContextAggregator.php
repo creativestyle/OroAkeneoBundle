@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Job\Context;
+namespace Creativestyle\Bundle\AkeneoBundle\Job\Context;
 
 use Oro\Bundle\BatchBundle\Entity\JobExecution;
 use Oro\Bundle\ImportExportBundle\Context\ContextInterface;

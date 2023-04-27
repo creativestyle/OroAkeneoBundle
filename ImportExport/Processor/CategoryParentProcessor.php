@@ -1,10 +1,10 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Processor;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Processor;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ManagerRegistry;
-use Oro\Bundle\AkeneoBundle\Entity\AkeneoSettings;
+use Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareInterface;
 use Oro\Bundle\CacheBundle\Provider\MemoryCacheProviderAwareTrait;
 use Oro\Bundle\CatalogBundle\Entity\Category;

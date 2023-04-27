@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Step;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Step;
 
 use Oro\Bundle\BatchBundle\Entity\StepExecution;
 use Oro\Bundle\BatchBundle\Step\ItemStep as BaseItemStep;

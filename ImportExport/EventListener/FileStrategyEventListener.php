@@ -1,9 +1,9 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\EventListener;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\EventListener;
 
 use Doctrine\Common\Util\ClassUtils;
-use Oro\Bundle\AkeneoBundle\ImportExport\Strategy\ExistingEntityAwareInterface;
+use Creativestyle\Bundle\AkeneoBundle\ImportExport\Strategy\ExistingEntityAwareInterface;
 use Oro\Bundle\AttachmentBundle\Entity\File;
 use Oro\Bundle\AttachmentBundle\Entity\FileItem;
 use Oro\Bundle\EntityBundle\Helper\FieldHelper;

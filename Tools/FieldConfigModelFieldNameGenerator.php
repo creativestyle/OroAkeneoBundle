@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Tools;
+namespace Creativestyle\Bundle\AkeneoBundle\Tools;
 
 /**
  * Generates field name which should start with a symbol and contain only alphabetic symbols, underscore and numbers.

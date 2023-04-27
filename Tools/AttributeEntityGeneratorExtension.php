@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Tools;
+namespace Creativestyle\Bundle\AkeneoBundle\Tools;
 
 use Doctrine\Inflector\Inflector;
 use Oro\Bundle\EntityExtendBundle\Tools\ExtendConfigDumper;

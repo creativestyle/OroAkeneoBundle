@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ProductVariant\TypeHandler;
+namespace Creativestyle\Bundle\AkeneoBundle\ProductVariant\TypeHandler;
 
 use Oro\Bundle\ProductBundle\ProductVariant\Registry\ProductVariantTypeHandlerInterface;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\ImportExport\Reader;
+namespace Creativestyle\Bundle\AkeneoBundle\ImportExport\Reader;
 
 use Oro\Bundle\ImportExportBundle\Exception\LogicException;
 use Oro\Bundle\ImportExportBundle\Reader\AbstractReader;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\EntityConfig;
+namespace Creativestyle\Bundle\AkeneoBundle\EntityConfig;
 
 use Oro\Bundle\EntityConfigBundle\EntityConfig\FieldConfigInterface;
 use Symfony\Component\Config\Definition\Builder\NodeBuilder;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle;
+namespace Creativestyle\Bundle\AkeneoBundle;
 
-use Oro\Bundle\AkeneoBundle\DependencyInjection\CompilerPass\AdditionalOptionalListenersCompilerPass;
-use Oro\Bundle\AkeneoBundle\DependencyInjection\CompilerPass\EnterprisePass;
-use Oro\Bundle\AkeneoBundle\DependencyInjection\CompilerPass\TypeValidationLoaderPass;
+use Creativestyle\Bundle\AkeneoBundle\DependencyInjection\CompilerPass\AdditionalOptionalListenersCompilerPass;
+use Creativestyle\Bundle\AkeneoBundle\DependencyInjection\CompilerPass\EnterprisePass;
+use Creativestyle\Bundle\AkeneoBundle\DependencyInjection\CompilerPass\TypeValidationLoaderPass;
 use Symfony\Component\DependencyInjection\Compiler\PassConfig;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;

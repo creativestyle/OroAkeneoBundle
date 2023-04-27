@@ -1,2 +1,2 @@
 bundles:
-  - { name: Oro\Bundle\AkeneoBundle\OroAkeneoBundle, priority: 255 }
+  - { name: Creativestyle\Bundle\AkeneoBundle\OroAkeneoBundle, priority: 255 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\Settings\DataProvider;
+namespace Creativestyle\Bundle\AkeneoBundle\Settings\DataProvider;
 
 interface SyncProductsDataProviderInterface
 {

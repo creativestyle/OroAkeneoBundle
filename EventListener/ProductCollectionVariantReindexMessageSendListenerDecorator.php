@@ -1,6 +1,6 @@
 <?php
 
-namespace Oro\Bundle\AkeneoBundle\EventListener;
+namespace Creativestyle\Bundle\AkeneoBundle\EventListener;
 
 use Oro\Bundle\ProductBundle\EventListener\ProductCollectionVariantReindexMessageSendListener as BaseListener;
 use Oro\Bundle\SegmentBundle\Entity\Segment;

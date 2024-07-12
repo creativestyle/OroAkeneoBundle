@@ -8,13 +8,13 @@ use Creativestyle\Bundle\AkeneoBundle\Integration\AkeneoTransportInterface;
 use Oro\Bundle\CurrencyBundle\Provider\CurrencyProviderInterface;
 use Oro\Bundle\IntegrationBundle\Entity\Channel;
 use Oro\Bundle\IntegrationBundle\Form\Type\ChannelType;
-use Oro\Bundle\SecurityBundle\Annotation\Acl;
+use Oro\Bundle\SecurityBundle\Attribute\Acl;
 use Psr\Http\Client\ClientExceptionInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 class ValidateConnectionController extends AbstractController
@@ -42,18 +42,11 @@ class ValidateConnectionController extends AbstractController
     }
 
     /**
-     * @Route(path="/validate-akeneo-connection/{channelId}/", name="oro_akeneo_validate_connection", methods={"POST"})
-     * @ParamConverter("channel", class="OroIntegrationBundle:Channel", options={"id"="channelId"})
-     *
-     * @Acl(
-     *      id="oro_integration_channel",
-     *      type="entity",
-     *      class="OroIntegrationBundle:Channel",
-     *      permission="VIEW"
-     * )
-     *
      * @throws \InvalidArgumentException
      */
+    #[\Symfony\Component\Routing\Attribute\Route(path: '/validate-akeneo-connection/{channelId}/', name: 'oro_akeneo_validate_connection', methods: ['POST'])]
+    #[ParamConverter('channel', class: 'OroIntegrationBundle:Channel', options: ['id' => 'channelId'])]
+    #[Acl(id: 'oro_integration_channel', type: 'entity', class: 'OroIntegrationBundle:Channel', permission: 'VIEW')]
     public function validateConnectionAction(Request $request, Channel $channel = null): JsonResponse
     {
         if (!$channel) {

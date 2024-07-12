@@ -27,7 +27,7 @@ trait StrategyValidationTrait
 
         $this->cachedEntities = [];
         $this->processingEntity = null;
-        if (property_exists($this, 'relatedEntityStateHelper') && $this->relatedEntityStateHelper) {
+        if (\Oro\Bundle\EntityExtendBundle\EntityPropertyInfo::propertyExists($this, 'relatedEntityStateHelper') && $this->relatedEntityStateHelper) {
             $this->relatedEntityStateHelper->clear();
         }
 
@@ -85,7 +85,7 @@ trait StrategyValidationTrait
 
     protected function invalidateEntity($entity)
     {
-        if (property_exists($this, 'relatedEntityStateHelper') && $this->relatedEntityStateHelper) {
+        if (\Oro\Bundle\EntityExtendBundle\EntityPropertyInfo::propertyExists($this, 'relatedEntityStateHelper') && $this->relatedEntityStateHelper) {
             $this->relatedEntityStateHelper->revertRelations();
         }
 

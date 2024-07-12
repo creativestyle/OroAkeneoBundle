@@ -15,13 +15,11 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * Clears old records from oro_integration_fields_changes table before repack.
  */
+#[\Symfony\Component\Console\Attribute\AsCommand('oro:cron:akeneo:cleanup', 'Clears old records from oro_integration_fields_changes table.')]
 class CleanupCommand extends Command implements
     CronCommandScheduleDefinitionInterface,
     CronCommandActivationInterface
 {
-    /** @var string */
-    protected static $defaultName = 'oro:cron:akeneo:cleanup';
-
     /** @var DoctrineHelper */
     private $doctrineHelper;
 
@@ -44,7 +42,6 @@ class CleanupCommand extends Command implements
     public function configure()
     {
         $this
-            ->setDescription('Clears old records from oro_integration_fields_changes table.')
             ->setHelp(
                 <<<'HELP'
                     The <info>%command.name%</info> command clears fields changes for complete job records
@@ -55,7 +52,7 @@ class CleanupCommand extends Command implements
             );
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln(sprintf(
             '<comment>Number of fields changes that has been deleted:</comment> %d',
@@ -64,7 +61,7 @@ class CleanupCommand extends Command implements
 
         $output->writeln('<info>Fields changes cleanup complete</info>');
 
-        return 0;
+        return \Symfony\Component\Console\Command\Command::SUCCESS;
     }
 
     private function deleteRecords(): int

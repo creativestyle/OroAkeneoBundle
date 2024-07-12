@@ -4,37 +4,30 @@ namespace Creativestyle\Bundle\AkeneoBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Table(name="oro_akeneo_locale")
- *
- * @ORM\Entity(repositoryClass="Creativestyle\Bundle\AkeneoBundle\Entity\Repository\AkeneoLocaleRepository")
- */
+
+#[ORM\Entity(repositoryClass: \Creativestyle\Bundle\AkeneoBundle\Entity\Repository\AkeneoLocaleRepository::class)]
+#[ORM\Table(name: 'oro_akeneo_locale')]
 class AkeneoLocale
 {
     /**
      * @var string
-     *
-     * @ORM\Column(name="locale", type="string", length=10, nullable=true)
      */
+    #[ORM\Column(name: 'locale', type: 'string', length: 10, nullable: true)]
     protected $locale;
     /**
      * @var int
-     *
-     * @ORM\Id
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
+    #[ORM\Id]
+    #[ORM\Column(name: 'id', type: 'integer')]
+    #[ORM\GeneratedValue(strategy: 'AUTO')]
     private $id;
     /**
      * @var string
-     *
-     * @ORM\Column(name="code", type="string", length=200)
      */
+    #[ORM\Column(name: 'code', type: 'string', length: 200)]
     private $code;
-    /**
-     * @ORM\ManyToOne(targetEntity="Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings", inversedBy="akeneoLocales")
-     * @ORM\JoinColumn(referencedColumnName="id")
-     */
+    #[ORM\ManyToOne(targetEntity: \Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoSettings::class, inversedBy: 'akeneoLocales')]
+    #[ORM\JoinColumn(referencedColumnName: 'id')]
     private $akeneoSettings;
 
     /**

@@ -8,7 +8,7 @@ use Oro\Bundle\BatchBundle\Step\StepExecutor as BaseStepExecutor;
 
 class StepExecutor extends BaseStepExecutor
 {
-    public function execute(StepExecutionWarningHandlerInterface $warningHandler = null): void
+    public function execute(?\Oro\Bundle\BatchBundle\Step\StepExecutionWarningHandlerInterface $warningHandler = null): void
     {
         try {
             $stopExecution = false;

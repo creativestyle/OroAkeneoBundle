@@ -22,7 +22,7 @@
         ]
     },
     "require": {
-        "oro/commerce": "5.1.*",
+        "oro/commerce": "6.0.*",
         "akeneo/api-php-client": "8.*"
     }
 }

@@ -218,14 +218,14 @@ class CumulativeWriter implements
 
     public function initialize()
     {
-        if (method_exists($this->writer, 'initialize')) {
+        if (\Oro\Bundle\EntityExtendBundle\EntityPropertyInfo::methodExists($this->writer, 'initialize')) {
             $this->writer->initialize();
         }
     }
 
     public function flush()
     {
-        if (method_exists($this->writer, 'flush')) {
+        if (\Oro\Bundle\EntityExtendBundle\EntityPropertyInfo::methodExists($this->writer, 'flush')) {
             $this->writer->flush();
         }
     }

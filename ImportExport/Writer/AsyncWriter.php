@@ -128,7 +128,7 @@ class AsyncWriter implements
     private function sendMessage(int $channelId, int $jobId, bool $incrementedRead = false): void
     {
         $this->messageProducer->send(
-            Topics::IMPORT_PRODUCTS,
+            \Creativestyle\Bundle\AkeneoBundle\Async\Topic\ImportProductsTopic::getName(),
             new Message(
                 [
                     'integrationId' => $channelId,

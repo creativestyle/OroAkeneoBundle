@@ -34,7 +34,7 @@ class ProductCollectionVariantReindexMessageSendListenerDecorator extends BaseLi
     /**
      * @param bool $isFull
      */
-    public function scheduleSegment(Segment $segment, $isFull = false, array $additionalProducts = []): void
+    public function scheduleSegment(Segment $segment, bool $isFull = false, array $additionalProducts = []): void
     {
         if (!$this->enabled) {
             return;

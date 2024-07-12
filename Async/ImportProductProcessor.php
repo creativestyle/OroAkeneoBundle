@@ -56,7 +56,7 @@ class ImportProductProcessor implements MessageProcessorInterface, TopicSubscrib
      */
     public static function getSubscribedTopics()
     {
-        return [Topics::IMPORT_PRODUCTS];
+        return [\Creativestyle\Bundle\AkeneoBundle\Async\Topic\ImportProductsTopic::getName()];
     }
 
     /**

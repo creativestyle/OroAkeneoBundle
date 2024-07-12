@@ -12,10 +12,9 @@ use Oro\Bundle\PricingBundle\Entity\PriceList;
 use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
- * @ORM\Entity(repositoryClass="Creativestyle\Bundle\AkeneoBundle\Entity\Repository\AkeneoSettingsRepository")
- *
  * @SuppressWarnings(PHPMD.TooManyFields)
  */
+#[ORM\Entity(repositoryClass: \Creativestyle\Bundle\AkeneoBundle\Entity\Repository\AkeneoSettingsRepository::class)]
 class AkeneoSettings extends Transport
 {
     public const TWO_LEVEL_FAMILY_VARIANT_FIRST_ONLY = 'first_only';
@@ -26,187 +25,148 @@ class AkeneoSettings extends Transport
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="akeneo_sync_products", type="string", length=255, nullable=false)
      */
+    #[ORM\Column(name: 'akeneo_sync_products', type: 'string', length: 255, nullable: false)]
     protected $syncProducts;
     /**
      * @var string
-     *
-     * @ORM\Column(name="akeneo_product_unit_attribute", type="string", length=255, nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_product_unit_attribute', type: 'string', length: 255, nullable: true)]
     protected $productUnitAttribute;
     /**
      * @var string
-     *
-     * @ORM\Column(name="akeneo_unit_precision_attr", type="string", length=255, nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_unit_precision_attr', type: 'string', length: 255, nullable: true)]
     protected $productUnitPrecisionAttribute;
     /**
      * @var string[]
-     *
-     * @ORM\Column(name="akeneo_channels", type="array", nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_channels', type: 'array', nullable: true)]
     protected $akeneoChannels;
     /**
      * @var string
-     *
-     * @ORM\Column(name="akeneo_active_channel", type="string", nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_active_channel', type: 'string', nullable: true)]
     protected $akeneoActiveChannel;
     /**
      * @var string[]
-     *
-     * @ORM\Column(name="akeneo_currencies", type="array", nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_currencies', type: 'array', nullable: true)]
     protected $akeneoCurrencies;
     /**
      * @var string[]
-     *
-     * @ORM\Column(name="akeneo_active_currencies", type="array", nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_active_currencies', type: 'array', nullable: true)]
     protected $akeneoActiveCurrencies;
     /**
      * @var string[]
-     *
-     * @ORM\Column(name="akeneo_locales_list", type="array", nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_locales_list', type: 'array', nullable: true)]
     protected $akeneoLocalesList;
-    /**
-     * @ORM\ManyToOne(targetEntity="Oro\Bundle\CatalogBundle\Entity\Category")
-     * @ORM\JoinColumn(onDelete="SET NULL")
-     */
+    #[ORM\ManyToOne(targetEntity: \Oro\Bundle\CatalogBundle\Entity\Category::class)]
+    #[ORM\JoinColumn(onDelete: 'SET NULL')]
     protected $rootCategory;
     /**
      * @var bool
-     *
-     * @ORM\Column(name="akeneo_acl_voter_enabled", type="boolean")
      */
+    #[ORM\Column(name: 'akeneo_acl_voter_enabled', type: 'boolean')]
     protected $aclVoterEnabled = true;
     /**
      * @var string
-     *
-     * @ORM\Column(name="akeneo_product_filter", type="text", nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_product_filter', type: 'text', nullable: true)]
     protected $productFilter;
     /**
      * @var string
-     *
-     * @ORM\Column(name="akeneo_conf_product_filter", type="text", nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_conf_product_filter', type: 'text', nullable: true)]
     protected $configurableProductFilter;
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", name="akeneo_url", length=100)
      */
+    #[ORM\Column(type: 'string', name: 'akeneo_url', length: 100)]
     private $url;
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", name="akeneo_client_id", length=100)
      */
+    #[ORM\Column(type: 'string', name: 'akeneo_client_id', length: 100)]
     private $clientId;
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", name="akeneo_secret", length=100)
      */
+    #[ORM\Column(type: 'string', name: 'akeneo_secret', length: 100)]
     private $secret;
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", name="akeneo_username", length=200)
      */
+    #[ORM\Column(type: 'string', name: 'akeneo_username', length: 200)]
     private $username;
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", name="akeneo_password", length=200)
      */
+    #[ORM\Column(type: 'string', name: 'akeneo_password', length: 200)]
     private $password;
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", name="akeneo_token", length=200)
      */
+    #[ORM\Column(type: 'string', name: 'akeneo_token', length: 200)]
     private $token;
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", name="akeneo_refresh_token", length=200)
      */
+    #[ORM\Column(type: 'string', name: 'akeneo_refresh_token', length: 200)]
     private $refreshToken;
 
     /**
      * @var string
-     *
-     * @ORM\Column(type="datetime", name="akeneo_token_expiry_date_time", nullable=true)
      */
+    #[ORM\Column(type: 'datetime', name: 'akeneo_token_expiry_date_time', nullable: true)]
     private $tokenExpiryDateTime;
 
-    /**
-     * @ORM\OneToMany(
-     *     targetEntity="Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoLocale",
-     *     mappedBy="akeneoSettings",
-     *     cascade={"persist"},
-     *     orphanRemoval=true,
-     *     fetch="EAGER"
-     * )
-     */
+    #[ORM\OneToMany(targetEntity: \Creativestyle\Bundle\AkeneoBundle\Entity\AkeneoLocale::class, mappedBy: 'akeneoSettings', cascade: ['persist'], orphanRemoval: true, fetch: 'EAGER')]
     private $akeneoLocales;
 
     /**
      * @var PriceList
-     *
-     * @ORM\ManyToOne(targetEntity="Oro\Bundle\PricingBundle\Entity\PriceList")
-     * @ORM\JoinColumn(onDelete="SET NULL")
      */
+    #[ORM\ManyToOne(targetEntity: \Oro\Bundle\PricingBundle\Entity\PriceList::class)]
+    #[ORM\JoinColumn(onDelete: 'SET NULL')]
     private $priceList;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="akeneo_attributes_list", type="text", nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_attributes_list', type: 'text', nullable: true)]
     private $akeneoAttributesList;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="akeneo_attributes_image_list", type="text", nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_attributes_image_list', type: 'text', nullable: true)]
     private $akeneoAttributesImageList;
 
     /**
      * @var boolean
-     *
-     * @ORM\Column(name="akeneo_merge_image_to_parent", type="boolean", options={"default"=false})
      */
+    #[ORM\Column(name: 'akeneo_merge_image_to_parent', type: 'boolean', options: ['default' => false])]
     private $akeneoMergeImageToParent = false;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="akeneo_variant_levels", type="string", length=255)
      */
+    #[ORM\Column(name: 'akeneo_variant_levels', type: 'string', length: 255)]
     private $akeneoVariantLevels;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="akeneo_attributes_mapping", type="text", nullable=true)
      */
+    #[ORM\Column(name: 'akeneo_attributes_mapping', type: 'text', nullable: true)]
     private $akeneoAttributesMapping;
 
-    /**
-     * @ORM\Column(name="akeneo_brand_reference_code", type="string", length=255)
-     */
+    #[ORM\Column(name: 'akeneo_brand_reference_code', type: 'string', length: 255)]
     private $akeneoBrandReferenceEntityCode;
 
-    /**
-     * @ORM\Column(name="akeneo_brand_mapping", type="text", nullable=true)
-     */
+    #[ORM\Column(name: 'akeneo_brand_mapping', type: 'text', nullable: true)]
     private $akeneoBrandMapping;
 
     /**

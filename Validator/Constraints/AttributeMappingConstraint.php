@@ -11,12 +11,12 @@ class AttributeMappingConstraint extends Constraint
 {
     public $message = 'oro.akeneo.validator.attribute_mapping.message';
 
-    public function getTargets()
+    public function getTargets(): string|array
     {
         return self::CLASS_CONSTRAINT;
     }
 
-    public function validatedBy()
+    public function validatedBy(): string
     {
         return 'oro_akeneo.attribute_mapping_validator';
     }
